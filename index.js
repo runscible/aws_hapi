@@ -44,7 +44,7 @@ const init = async () => {
     console.log(`server running on ${PORT} `)
 }
 
-process.on('unhandledRejection', () => {
+process.on('unhandledRejection', err => {
     console.error(`HAY UN PUTO ERROR ${err}`)
     process.exit(1)
 })
